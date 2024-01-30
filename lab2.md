@@ -8,18 +8,29 @@ A get_attr will reciece a value from the hierachy of self.module
 for example palceholder represnets an input to the graph and is for inputs to be fed into the graph
 get_attr
 
+Layer types stores the type of each module in order and then added to abuffer
+
+The buffer is written to a file or the console.
+
 
 call_module: A node operation representing the invocation of a module in nn.Module.
 
 2.What are the functionalities of profile_statistics_analysis_pass and report_node_meta_param_analysis_pass respectively?
 
 
-profile_statistics_analysis_pass takes a graph, set its up for profiling, profiles the activaiton and weights and then computes the staticstscs for each node.
+profile_statistics_analysis_pass takes a graph, set its up for profiling, profiles the activaiton and weights and then computes the staticstscs for each node. The statics are then saved in each nodes metadata.
+
+report_node_meta_param_analysis_pass iterates through each node to gather data on information such as node name, operation type, MASE type, MASE operation, and meta parameters related to common, hardware, and software.
+
+
 
 
 
 
 3.Explain why only 1 OP is changed after the quantize_transform_pass .
+
+Only the linear layer is changed and onlu linear is defined in the pas args to optimise
+
 
 4.Write some code to traverse both mg and ori_mg, check and comment on the nodes in these two graphs. You might find the source code for the implementation of summarize_quantization_analysis_pass useful.
 
