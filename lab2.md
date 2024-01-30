@@ -2,7 +2,20 @@ Lab2
 
 1. Explain the functionality of report_graph_analysis_pass and its printed jargons such as placeholder, get_attr … You might find the doc of torch.fx useful.
 
+It goes through the graph and counts each operation/variable
+A placeholder represnets a funciton input and has a name type and default value
+A get_attr will reciece a value from the hierachy of self.module
+for example palceholder represnets an input to the graph and is for inputs to be fed into the graph
+get_attr
+
+
+call_module: A node operation representing the invocation of a module in nn.Module.
+
 2.What are the functionalities of profile_statistics_analysis_pass and report_node_meta_param_analysis_pass respectively?
+
+
+profile_statistics_analysis_pass takes a graph, set its up for profiling, profiles the activaiton and weights and then computes the staticstscs for each node.
+
 
 
 
