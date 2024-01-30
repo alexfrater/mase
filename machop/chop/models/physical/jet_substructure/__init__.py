@@ -49,11 +49,30 @@ class JSC_TOY_LAB1(nn.Module):
     def __init__(self, info):
         super(JSC_TOY_LAB1, self).__init__()
         self.seq_blocks = nn.Sequential(
-             # 1st LogicNets Layer
-            nn.BatchNorm1d(16),  # input_quant       # 0
+                        # 16*5 = 80
+            # 4 layers approx 10* params
+            # 16*16 + 16*16 + 16*16 + 16*5 = 848
+
+            # 1
+            nn.BatchNorm1d(16),  # input_quant
             nn.ReLU(16),  # 1
-            nn.Linear(16, 5),  # linear              # 2
-            # nn.BatchNorm1d(5),  # output_quant       # 3
+            nn.Linear(16, 16),  # linear    
+            nn.ReLU(16),  #
+            # 2
+            nn.BatchNorm1d(16),  # input_quant
+            nn.ReLU(16),  # 1
+            nn.Linear(16, 16),  # linear
+            nn.ReLU(16),  #
+
+            # 3
+            nn.BatchNorm1d(16),  # input_quant
+            nn.ReLU(16),  # 1
+            nn.Linear(16, 16),  # linear
+            nn.ReLU(16),  # 4
+            # 4
+            nn.BatchNorm1d(16),  # input_quant
+            nn.ReLU(16),  # 1
+            nn.Linear(16, 5),  # linear
             nn.ReLU(5),  # 4
         )
 

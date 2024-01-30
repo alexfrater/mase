@@ -13,7 +13,7 @@ Layer types stores the type of each module in order and then added to abuffer
 The buffer is written to a file or the console.
 
 
-call_module: A node operation representing the invocation of a module in nn.Module.
+call_module: A node operation representing the invocation of a module in nn.Module. Usually a neural network mdoule such as a layer
 
 2.What are the functionalities of profile_statistics_analysis_pass and report_node_meta_param_analysis_pass respectively?
 
@@ -38,3 +38,6 @@ Only the linear layer is changed and onlu linear is defined in the pas args to o
 
 6.Write code to show and verify that the weights of these layers are indeed quantised. You might need to go through the source code of the implementation of the quantisation pass and also the implementation of the Quantized Layers .
 
+
+
+.target usually holds a reference to the actual layer or module instance 
