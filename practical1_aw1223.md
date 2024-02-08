@@ -23,12 +23,16 @@ Smaller batch size, longer to converge but are more regualrized.
 
 | Epoch Number | Test Accuracy | Test Loss |
 |----------|----------|----------|
-| 1| Row 1, Column 2 | Row 1, Column 3 |
+| 1|   |  |
 | 2 | Row 2, Column 2 | Row 2, Column 3 |
 | 3 | Row 3, Column 2 | Row 3, Column 3 |
 | 4 | Row 3, Column 2 | Row 3, Column 3 |
 | 5 | Row 3, Column 2 | Row 3, Column 3 |
-| 10 | Row 3, Column 2 | Row 3, Column 3 |
+|6|||
+| 7 ||  |
+| 8 |  |  |
+| 9 |0.5087048411369324| 1.3385382890701294 |
+| 10 | 0.5122921466827393 | 1.3265289068222046 |
 
 
 If the epoch number is too low, the model will underfit as the weights have not been adjusted significantly. If the model is trained for too many epochs, the model may overfit and learn the nosie in the data.
