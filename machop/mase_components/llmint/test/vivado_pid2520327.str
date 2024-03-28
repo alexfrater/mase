@@ -1558,3 +1558,200 @@ selectCodeEditor("LLMint.sv", 381, 103); // ch (w, cr)
 // TclEventType: RUN_STATUS_CHANGE
 // TclEventType: RUN_STEP_COMPLETED
 // TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 671 ms. Decreasing delay to 2671 ms.
+// Elapsed time: 454 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Mar 28 11:21:16 GMT 2024 ; 00:04:15 ; Vivado Synthesis Defaults (Vivado Synthesis 2019) ; Vivado Synthesis Default Reports (Vivado Synthesis 2019) ; xcu280-fsvh2892-2L-e ; ee-beholder1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // az (O, cr) - Node
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 1.1s
+// WARNING: HEventQueue.dispatchEvent() is taking  1264 ms.
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Mar 28 11:21:16 GMT 2024 ; 00:04:15 ; Vivado Synthesis Defaults (Vivado Synthesis 2019) ; Vivado Synthesis Default Reports (Vivado Synthesis 2019) ; xcu280-fsvh2892-2L-e ; ee-beholder1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true); // az (O, cr) - Node
+// Elapsed time: 22 seconds
+selectCodeEditor("LLMint.sv", 203, 175); // ch (w, cr)
+selectCodeEditor("LLMint.sv", 257, 174); // ch (w, cr)
+selectCodeEditor("LLMint.sv", 257, 174, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("LLMint.sv", 288, 342); // ch (w, cr)
+selectCodeEditor("LLMint.sv", 288, 342, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("LLMint.sv", 348, 255); // ch (w, cr)
+selectCodeEditor("LLMint.sv", 348, 255, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "LLMint.sv", 'c'); // ch (w, cr)
+selectCodeEditor("LLMint.sv", 342, 341, false, true, false, false, false); // ch (w, cr) - Control Key
+selectCodeEditor("LLMint.sv", 342, 342, false, true, false, false, true); // ch (w, cr) - Control Key - Double Click
+typeControlKey((HResource) null, "LLMint.sv", 'v'); // ch (w, cr)
+selectCodeEditor("LLMint.sv", 366, 128); // ch (w, cr)
+selectCodeEditor("LLMint.sv", 366, 128, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "LLMint.sv", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // ai (cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bB (cr):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 20 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 28 11:32:48 2024] Launched synth_1... Run output will be captured here: /home/aw1223/new/mase/machop/mase_components/llmint/vivado/vivado.runs/synth_1/runme.log [Thu Mar 28 11:32:48 2024] Launched impl_1... Run output will be captured here: /home/aw1223/new/mase/machop/mase_components/llmint/vivado/vivado.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 12303.781 ; gain = 0.000 ; free physical = 179161 ; free virtual = 196300 
+// 'c' command handler elapsed time: 9 seconds
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1386 ms. Increasing delay to 4158 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2161 ms. Increasing delay to 6483 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 569 seconds
+selectCodeEditor("LLMint.sv", 193, 157); // ch (w, cr)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3617 ms. Increasing delay to 10851 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5694 ms. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 12613 ms. Increasing delay to 37839 ms.
+// WARNING: HTimer (ExpRunPropPanels Refresh Status Timer) is taking 1044ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1044 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 515 ms. Decreasing delay to 2515 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 6,577 MB. GUI used memory: 150 MB. Current time: 3/28/24, 11:52:04 AM GMT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1500 ms. Increasing delay to 4500 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3513 ms. Increasing delay to 10539 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1473 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 2850ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2850 ms.
+// aj (cr): Implementation Completed: addNotify
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 5397 ms. Increasing delay to 16191 ms.
+// Elapsed time: 1000 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aj)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bB (cr):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 6,618 MB. GUI used memory: 150 MB. Current time: 3/28/24, 11:59:25 AM GMT
+// Xgd.load filename: /mnt/applications/Xilinx/19.2/Vivado/2019.2/data/parts/xilinx/virtexuplusHBM/devint/virtexuplusHBM/xcu280/xcu280.xgd; ZipEntry: xcu280_detail.xgd elapsed time: 2.2s
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// [Engine Memory]: 7,043 MB (+32638kb) [16:09:35]
+// DeviceView Instantiated
+// [Engine Memory]: 7,397 MB (+1365kb) [16:09:35]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 4.5s
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.4s
+// WARNING: HEventQueue.dispatchEvent() is taking  1417 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.13 . Memory (MB): peak = 12303.781 ; gain = 0.000 ; free physical = 179004 ; free virtual = 196216 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 389 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.95 . Memory (MB): peak = 12303.781 ; gain = 0.000 ; free physical = 178705 ; free virtual = 195917 
+// Tcl Message: Restored from archive | CPU: 0.650000 secs | Memory: 8.670181 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:01 . Memory (MB): peak = 12303.781 ; gain = 0.000 ; free physical = 178705 ; free virtual = 195917 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 12303.781 ; gain = 0.000 ; free physical = 178705 ; free virtual = 195917 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 85 instances were transformed.   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 16 instances   IBUF => IBUF (IBUFCTRL, INBUF): 69 instances  
+// Tcl Message: open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 12874.531 ; gain = 570.750 ; free physical = 177882 ; free virtual = 195095 
+// Device view-level: 0.0
+// ExpRunCommands.openImplResults elapsed time: 34.6s
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// RouteApi::initDelayMediator elapsed time: 4.4s
+// WARNING: HEventQueue.dispatchEvent() is taking  1346 ms.
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 39 seconds
+// Elapsed time: 39 seconds
+dismissDialog("Open Implemented Design"); // bB (cr)
+// Elapsed time: 31 seconds
+selectTab((HResource) null, (HResource) null, "Power", 5); // aL (aI, cr)
+selectButton((HResource) null, "97%"); // c (f, cr)
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 37, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (cr): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Report Utilization"); // a (cr)
+// bB (cr):  Report Utilization : addNotify
+// Tcl Message: report_utilization -name utilization_1 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 7,221 MB. GUI used memory: 307 MB. Current time: 3/28/24, 12:00:53 PM GMT
+// WARNING: HEventQueue.dispatchEvent() is taking  1696 ms.
+dismissDialog("Report Utilization"); // bB (cr)
+// PAPropertyPanels.initPanels (low_precision_linear (fixed_linear)) elapsed time: 0.2s
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "low_precision_linear (fixed_linear) ; 1014 ; 1212 ; 188 ; 321 ; 1014 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0", 3, "1212", 2, true); // z (O, cr) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "scatter (scatter_threshold) ; 996 ; 0 ; 8 ; 221 ; 996 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0", 4, "scatter (scatter_threshold)", 0, false); // z (O, cr)
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "LLMint ; 3641 ; 3384 ; 304 ; 695 ; 3641 ; 16 ; 136 ; 64 ; 64 ; 8 ; 1", 0, "LLMint", 0, true); // z (O, cr) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationHierViewTreeTablePanel_TABLE(Hierarchy)", "scatter (scatter_threshold) ; 996 ; 0 ; 8 ; 221 ; 996 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0", 4, "0", 6, false, true, false, false, false, false); // z (O, cr) - Shift Key
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 514 ms. Decreasing delay to 2514 ms.
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[LLMint, scatter (scatter_threshold)]", 6, false); // bD (O, cr)
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[LLMint, scatter (scatter_threshold)]", 6); // bD (O, cr)
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[LLMint, scatter (scatter_threshold)]", 6); // bD (O, cr)
+selectTab((HResource) null, (HResource) null, "Power", 5); // aL (aI, cr)
+// Elapsed time: 55 seconds
+selectTab((HResource) null, (HResource) null, "Utilization", 9); // aL (aI, cr)
+// Elapsed time: 66 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LLMint.sv", 2); // i (h, cr)
+// Elapsed time: 104 seconds
+selectCodeEditor("LLMint.sv", 232, 98); // ch (w, cr)
+selectCodeEditor("LLMint.sv", 210, 115); // ch (w, cr)
+selectCodeEditor("LLMint.sv", 211, 131); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 28, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bB (cr):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 20 
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 28 12:05:22 2024] Launched synth_1... Run output will be captured here: /home/aw1223/new/mase/machop/mase_components/llmint/vivado/vivado.runs/synth_1/runme.log [Thu Mar 28 12:05:22 2024] Launched impl_1... Run output will be captured here: /home/aw1223/new/mase/machop/mase_components/llmint/vivado/vivado.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 12874.531 ; gain = 0.000 ; free physical = 177672 ; free virtual = 194873 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2065 ms. Increasing delay to 6195 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4960 ms. Increasing delay to 14880 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 9613 ms. Increasing delay to 28839 ms.
+// Elapsed time: 243 seconds
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (ds, cr)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 7,223 MB. GUI used memory: 275 MB. Current time: 3/28/24, 12:09:30 PM GMT
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 7,223 MB. GUI used memory: 276 MB. Current time: 3/28/24, 12:09:30 PM GMT
+// WARNING: HEventQueue.dispatchEvent() is taking  3461 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+// bB (cr):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bB (cr)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 14997 ms. Increasing delay to 44991 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 26552 ms. Increasing delay to 79656 ms.
+// TclEventType: RUN_STEP_COMPLETED
