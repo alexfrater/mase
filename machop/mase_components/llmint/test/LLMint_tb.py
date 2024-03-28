@@ -34,6 +34,7 @@ class LinearTB(Testbench):
         
         self.in_features = dut.TENSOR_SIZE_DIM.value
         self.out_features = dut.TENSOR_SIZE_DIM.value
+        
         self.high_slots = dut.HIGH_SLOTS.value
         self.threshold = dut.THRESHOLD.value
         self.bitwidth = dut.ORIGINAL_PRECISION.value
@@ -209,7 +210,7 @@ class LinearTB(Testbench):
             weights = self.preprocess_tensor(
                 self.linear_high.weight,
                 self.linear_high.w_quantizer,
-                int(self.dut.TENSOR_SIZE_DIM) * int(self.dut.TENSOR_SIZE_DIM)
+                int(self.dut.WEIGHT_PARALLELISM_DIM_0) * int(self.dut.TENSOR_SIZE_DIM)
             )
 
             q_weights = self.preprocess_tensor(
@@ -266,7 +267,8 @@ def create_params(original_precision_values=[16],
                           "WEIGHT_DIM_0": tsd,
                           "WEIGHT_DIM_1": tsd,
                           "HIGH_SLOTS": hs,
-                          "THRESHOLD": th} for op, rp, tsd, hs, th in filtered_combinations]
+                          "THRESHOLD": th,
+                          "WEIGHT_PARALLELISM_DIM_0" : 2} for op, rp, tsd, hs, th in filtered_combinations]
     for i in range(len(module_param_list)):
         print(module_param_list[i])
 

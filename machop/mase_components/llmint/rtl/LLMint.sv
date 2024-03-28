@@ -4,11 +4,12 @@
 module LLMint #(
     parameter ORIGINAL_PRECISION = 16,
     parameter REDUCED_PRECISION = 8,
-    parameter TENSOR_SIZE_DIM = 8,
-    parameter WEIGHT_DIM_0 = 8,
-    parameter WEIGHT_DIM_1 = 8,
-    parameter HIGH_SLOTS = 4,
+    parameter TENSOR_SIZE_DIM = 4,
+    parameter WEIGHT_DIM_0 = 4,
+    parameter WEIGHT_DIM_1 = 4,
+    parameter HIGH_SLOTS = 2,
     parameter THRESHOLD = 6
+//    parameter WEIGHT_PARALLELISM_DIM_0 = 2
 ) (
     input clk,
     input rst,
@@ -75,8 +76,16 @@ module LLMint #(
         end
         return result;
     endfunction*/
+    logic data_out_valid_low,data_out_valid_high;
+    assign data_out_valid = data_out_valid_low & data_out_valid_high;
 
 
+    logic data_in_ready_low,data_in_ready_high;
+    assign data_in_ready = data_in_ready_low & data_in_ready_high;
+    
+    logic weight_ready_low,weight_ready_high;
+    assign weight_ready = weight_ready_low & weight_ready_high;
+    
     fixed_linear#(
         .DATA_IN_0_PRECISION_0(REDUCED_PRECISION),
         .DATA_IN_0_TENSOR_SIZE_DIM_0(TENSOR_SIZE_DIM),
@@ -86,7 +95,7 @@ module LLMint #(
         .WEIGHT_PRECISION_0(REDUCED_PRECISION),
         .WEIGHT_TENSOR_SIZE_DIM_0(WEIGHT_DIM_0),
         .WEIGHT_TENSOR_SIZE_DIM_1(WEIGHT_DIM_1),
-        .WEIGHT_PARALLELISM_DIM_0(WEIGHT_DIM_0),
+        .WEIGHT_PARALLELISM_DIM_0(WEIGHT_PARALLELISM_DIM_0),
         .WEIGHT_PARALLELISM_DIM_1(1),
         .DATA_OUT_0_TENSOR_SIZE_DIM_0(TENSOR_SIZE_DIM),
         .DATA_OUT_0_TENSOR_SIZE_DIM_1(1),
@@ -97,15 +106,15 @@ module LLMint #(
 
         .data_in_0(input_linear_low_precision),
         .data_in_0_valid(data_in_valid),
-        .data_in_0_ready(data_in_ready),
+        .data_in_0_ready(data_in_ready_low),
 
         .weight(quantized_weights),
         .weight_valid(weight_valid),
-        .weight_ready(weight_ready),
+        .weight_ready(weight_ready_low),
 
         .data_out_0(output_linear_low_precision),
         .data_out_0_ready(data_out_ready),
-        .data_out_0_valid(data_out_valid)
+        .data_out_0_valid(data_out_valid_low)
 
     );
 
@@ -118,7 +127,7 @@ module LLMint #(
         .WEIGHT_PRECISION_0(ORIGINAL_PRECISION),
         .WEIGHT_TENSOR_SIZE_DIM_0(WEIGHT_DIM_0),
         .WEIGHT_TENSOR_SIZE_DIM_1(WEIGHT_DIM_1),
-        .WEIGHT_PARALLELISM_DIM_0(WEIGHT_DIM_0),
+        .WEIGHT_PARALLELISM_DIM_0(WEIGHT_PARALLELISM_DIM_0),
         .WEIGHT_PARALLELISM_DIM_1(1),
         .DATA_OUT_0_TENSOR_SIZE_DIM_0(TENSOR_SIZE_DIM),
         .DATA_OUT_0_TENSOR_SIZE_DIM_1(1),
@@ -129,15 +138,15 @@ module LLMint #(
 
         .data_in_0(high_precision_masked),
         .data_in_0_valid(data_in_valid),
-        .data_in_0_ready(data_in_ready),
+        .data_in_0_ready(data_in_ready_high),
 
         .weight(non_quantized_weights),
         .weight_valid(weight_valid),
-        .weight_ready(weight_ready),
+        .weight_ready(weight_ready_high),
 
         .data_out_0(output_linear_high_precision),
         .data_out_0_ready(data_out_ready),
-        .data_out_0_valid(data_out_valid)
+        .data_out_0_valid(data_out_valid_high)
     );
 
     for (genvar i = 0; i < TENSOR_SIZE_DIM; i = i + 1) begin
